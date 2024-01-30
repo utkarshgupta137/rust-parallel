@@ -16,7 +16,7 @@ repository = "https://github.com/aaronriekenberg/rust-parallel"
 [dependencies]
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
-indicatif = "0.17"
+indicatif = { version = "0.17", git = "https://github.com/utkarshgupta137/indicatif.git" }
 itertools = "0.12"
 num_cpus = "1"
 regex = "1"
