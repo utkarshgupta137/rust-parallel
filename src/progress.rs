@@ -9,7 +9,7 @@ use std::sync::Arc;
 use crate::command_line_args::CommandLineArgs;
 
 const PROGRESS_STYLE: &str =
-    "{spinner} [{elapsed_precise}] Commands Done/Total: {pos:>2}/{len:2} {wide_bar} ETA {eta_precise}";
+    "[{elapsed_precise}] Commands Done/Total: {pos:>2}/{len:2} {wide_bar} ETA {eta_precise}";
 
 pub struct Progress {
     progress_bar: Option<ProgressBar>,
