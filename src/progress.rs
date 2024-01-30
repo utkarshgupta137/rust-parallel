@@ -2,8 +2,6 @@ use anyhow::Context;
 
 use indicatif::{ProgressBar, ProgressStyle};
 
-use tokio::time::Duration;
-
 use std::sync::Arc;
 
 use crate::command_line_args::CommandLineArgs;
@@ -21,7 +19,6 @@ impl Progress {
             None
         } else {
             let progress_bar = ProgressBar::new(0);
-            progress_bar.enable_steady_tick(Duration::from_millis(100));
 
             let style = ProgressStyle::with_template(PROGRESS_STYLE)
                 .context("ProgressStyle::with_template error")?;
